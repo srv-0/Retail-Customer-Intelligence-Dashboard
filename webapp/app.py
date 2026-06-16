@@ -173,4 +173,4 @@ def api_customers():
     return jsonify(df[['customer_id','city','total_orders','lifetime_value','segment','churn_risk','last_order']].fillna('—').to_dict('records'))
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=False)
