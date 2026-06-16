@@ -2,8 +2,9 @@ from flask import Flask, render_template_string, request, jsonify
 import sqlite3, pandas as pd, json
 import os
 
-app = Flask(__name__)
-DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'retail_analytics.db')
+app = Flask(__name__)import os
+BASE = os.path.dirname(os.path.abspath(__file__))
+DB = os.path.join(BASE, 'data', 'retail_analytics.db')
 
 HTML = '''<!DOCTYPE html>
 <html lang="en">
@@ -134,7 +135,6 @@ def api_kpis():
                ROUND(AVG(total_amount),0) aov
         FROM transactions''').fetchone()
     
-    BASE = os.path.dirname(os.path.abspath(__file__))
     churn_df = pd.read_csv(os.path.join(BASE, 'data', 'churn_scores.csv'))
     churn_high = int((churn_df['churn_risk'] == 'High').sum())
     conn.close()
@@ -152,7 +152,6 @@ def api_customers():
     seg  = request.args.get('seg','').strip()
     risk = request.args.get('risk','').strip()
 
-    BASE = os.path.dirname(os.path.abspath(__file__))
     churn_df = pd.read_csv(os.path.join(BASE, 'data', 'churn_scores.csv'))
 
     
@@ -177,4 +176,5 @@ def api_customers():
     return jsonify(df[['customer_id','city','total_orders','lifetime_value','segment','churn_risk','last_order']].fillna('—').to_dict('records'))
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
