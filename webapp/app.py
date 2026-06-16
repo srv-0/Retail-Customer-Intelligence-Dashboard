@@ -1,8 +1,9 @@
 from flask import Flask, render_template_string, request, jsonify
 import sqlite3, pandas as pd, json
+import os
 
 app = Flask(__name__)
-DB = '../data/retail_analytics.db'
+DB = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'retail_analytics.db')
 
 HTML = '''<!DOCTYPE html>
 <html lang="en">
@@ -133,7 +134,8 @@ def api_kpis():
                ROUND(AVG(total_amount),0) aov
         FROM transactions''').fetchone()
     
-    churn_df = pd.read_csv('../data/churn_scores.csv')
+    BASE = os.path.dirname(os.path.abspath(__file__))
+    churn_df = pd.read_csv(os.path.join(BASE, 'data', 'churn_scores.csv'))
     churn_high = int((churn_df['churn_risk'] == 'High').sum())
     conn.close()
     rev = int(row['revenue'])
@@ -150,7 +152,9 @@ def api_customers():
     seg  = request.args.get('seg','').strip()
     risk = request.args.get('risk','').strip()
 
-    churn_df = pd.read_csv('../data/churn_scores.csv')
+    BASE = os.path.dirname(os.path.abspath(__file__))
+    churn_df = pd.read_csv(os.path.join(BASE, 'data', 'churn_scores.csv'))
+
     
     conn = get_db()
     customers_df = pd.read_sql('SELECT * FROM customers', conn)
