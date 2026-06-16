@@ -2,7 +2,7 @@ from flask import Flask, render_template_string, request, jsonify
 import sqlite3, pandas as pd, json
 import os
 
-app = Flask(__name__)import os
+app = Flask(__name__)
 BASE = os.path.dirname(os.path.abspath(__file__))
 DB = os.path.join(BASE, 'data', 'retail_analytics.db')
 
