@@ -11,7 +11,7 @@ HTML = '''<!DOCTYPE html>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Retail Customer Intelligence</title>
+<title>Customer Intelligence Dashboard</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f5f5;color:#1a1a1a}
@@ -48,8 +48,8 @@ tr:hover td{background:#f9f8ff}
 <body>
 <header>
   <svg width="22" height="22" fill="none" stroke="#fff" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-  <h1>Retail Customer Intelligence Dashboard</h1>
-  <span>Personal Project &nbsp;|&nbsp; 10,000 transactions · 1,104 customers</span>
+  <h1>Customer Intelligence Dashboard</h1>
+  <span>Developed by Saurav Singh &nbsp;|&nbsp; 10,000 transactions · 1,104 customers</span>
 </header>
 
 <div class="kpi-row" id="kpis"></div>
