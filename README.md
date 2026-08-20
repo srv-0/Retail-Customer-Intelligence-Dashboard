@@ -8,6 +8,10 @@ Retail businesses lose 20–30% of customers annually without early warning sign
 
 ---
 
+# Live Dashboard Monitoring
+<img width="1891" height="967" alt="image" src="https://github.com/user-attachments/assets/529a52ce-2632-4e62-9f69-ba8384778f4b" />
+
+
 ## Business Impact
 | Metric | Finding |
 |--------|---------|
@@ -66,6 +70,15 @@ python eda_rfm_churn.py
 python app.py
 # Open http://localhost:5000
 ```
+# KPI
+## Monthly Revenue
+![https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/01_monthly_revenue.png]
+
+## RFM Segmentation
+![https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/03_rfm_segments.png]
+ 
+## Revenue Distribution
+![https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/06_segment_revenue_dist.png]
 
 ---
 
