@@ -72,13 +72,13 @@ python app.py
 ```
 # KPI
 ## Monthly Revenue
-![https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/01_monthly_revenue.png]
+![https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/01_monthly_revenue.png](https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/01_monthly_revenue.png)
 
 ## RFM Segmentation
-![https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/03_rfm_segments.png]
+![https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/03_rfm_segments.png](https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/03_rfm_segments.png)
  
 ## Revenue Distribution
-![https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/06_segment_revenue_dist.png]
+![https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/06_segment_revenue_dist.png](https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/06_segment_revenue_dist.png)
 
 ---
 
