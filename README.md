@@ -70,7 +70,7 @@ python eda_rfm_churn.py
 python app.py
 # Open http://localhost:5000
 ```
-# KPI
+# KPIs
 ## Monthly Revenue
 ![https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/01_monthly_revenue.png](https://github.com/srv-0/Retail-Customer-Intelligence-Dashboard/blob/main/charts/01_monthly_revenue.png)
 
